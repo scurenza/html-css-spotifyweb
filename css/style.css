@@ -18,6 +18,12 @@ a{
     text-decoration: none;
 }
 
+hr{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* ROOT */
 :root{
     /* colors */
@@ -138,7 +144,7 @@ nav{
 
 .nav-buttons img{
     display: inline-block;
-    width: 30px;
+    width: 25px;
     vertical-align:middle;
 }
 
@@ -173,6 +179,11 @@ nav{
     justify-content: space-between;
 }
 
+.nav-small-container{
+    display: none;
+    height: 100%;
+}
+
 /* MAIN */
 main{
     background-color: aqua;
@@ -193,4 +204,74 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
+}
+
+/* MEDIA QUERIES */
+
+/* Small Desktop */
+@media screen and (max-width: 1100px) {
+    
+}
+
+/* Tablet */
+@media screen and (max-width: 700px) {
+    
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    nav{
+        width: 75px;
+    }
+
+    header{
+        margin-left: 75px;
+    }
+
+    main{
+        margin-left: 75px;
+        width: calc(100% - 75px);
+    }
+
+    .nav-container{
+        display: none;
+    }
+
+    .nav-small-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav-small-container .small-logo{
+        width: 70%;
+        margin-top: .5em;
+        margin-left: .6em;
+
+    }
+
+    .nav-small-buttons{
+        width: 70%;
+        margin-top: .5em;
+        margin-left: 1em;
+    }
+
+
+    .nav-small-buttons img{
+        width: 70%;
+    }
+
+    .small-download img{
+        width: 30%;
+        margin-left: 1.5em;
+        margin-bottom: .8em;
+    }
+
+    .small-profile img{
+        width: 30%;
+        margin-left: 1.6em;
+        margin-bottom: .8em;
+        background-color: grey;
+        border-radius: 50%;
+    }
 }
