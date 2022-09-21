@@ -109,14 +109,29 @@ html{
 /* HEADER */
 header{
     height: var(--header-height);
-    width: 100vw;
+    width: calc(100vw - var(--sidebar-width));
     background-color: var(--header-bg);
-    margin-left: var(--sidebar-width);
 
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
 }
+
+.header-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: end;
+}
+
+.btn{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 1em 3em;
+}
+
+
+
 
 /* SIDEBAR */
 nav{
@@ -252,7 +267,7 @@ footer{
     }
 
     header{
-        margin-left: 75px;
+        width: calc(100vw - 75px);
     }
 
     main{
