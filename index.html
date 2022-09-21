@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <!-- WEBAPP WRAPPER -->
@@ -22,9 +25,104 @@
         <!-- SIDEBAR -->
         <nav>
             <div class="nav-container">
-                <div class="logo">
-                    <img src="img/logo.svg" alt="Logo">
+                <!-- Upper nav container -->
+                <div class="upper-nav-container">
+                    <div class="logo mt-1 ml-1">
+                        <a href="https://spotify.it">
+                            <img src="img/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Nav buttons -->
+                    <div class="nav-buttons">
+                        <ul class="ml-1 mt-2">
+                            <li>
+                                <a href="#home">
+                                    <img src="img/home.svg" alt="Tasto Home">
+                                    <span class="grey">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#cerca">
+                                    <img src="img/search.svg" alt="Tasto Cerca">
+                                    <span class="grey">Cerca</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#libreria">
+                                    <img src="img/libreria.svg" alt="Tasto Libreria">
+                                    <span class="grey">La tua libreria</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Nav playlist -->
+                    <div class="nav-playlist ml-1 mt-2">
+                        <h3 class="white mb-1">PLAYLIST</h3>
+
+                        <ul>
+                            <li>
+                                <a class="grey" href="">
+                                    <span><i class="fa-solid fa-square-plus"></i>Crea playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="grey"  href="">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="grey"  href="">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="grey"  href="">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="grey"  href="">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="grey"  href="">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="grey"  href="">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="grey"  href="">
+                                    <span>Nome Playlist</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
+
+                <!-- Lower nav container -->
+                <div class="lower-nav-container">
+                    <a class="" href="https://spotify.it">
+                        <div class="download ml-1 mb-1">
+                            <img src="img/download.svg" alt="Tasto download">
+                            <span class="grey"> Installa app</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="profile ml-1 mt-1">
+                            <img src="img/profile.svg" alt="">
+                            <span class="white">John Doe</span>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </nav>
         <!-- /SIDEBAR -->
@@ -54,7 +152,7 @@
         <!-- FOOTER -->
         <footer>
             <div class="footer-container">
-                
+
             </div>
         </footer>
         <!-- /FOOTER -->

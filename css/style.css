@@ -43,6 +43,14 @@ html{
     width: 100%;
 }
 
+.grey{
+    color: grey;
+}
+
+.white{
+    color: white;
+}
+
 /* UTILITY */
 .mt-1{
     margin-top: 1em;
@@ -68,6 +76,30 @@ html{
     margin-bottom: 3em;
 }
 
+.ml-1{
+    margin-left: 1em;
+}
+
+.ml-2{
+    margin-left: 2em;
+}
+
+.ml-3{
+    margin-left: 3em;
+}
+
+.mr-1{
+    margin-right: 1em;
+}
+
+.mr-2{
+    margin-right: 2em;
+}
+
+.mr-3{
+    margin-right: 3em;
+}
+
 /* HEADER */
 header{
     height: var(--header-height);
@@ -88,8 +120,54 @@ nav{
 
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0;    
+}
+
+.logo{
+    width: 70%;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: column;
     
+}
+
+.nav-buttons img{
+    display: inline-block;
+    width: 30px;
+    vertical-align:middle;
+}
+
+.nav-buttons ul li{
+    margin-bottom: .7em;
+}
+
+.nav-playlist i{
+    font-size: 2.5em;
+    vertical-align: middle;
+    margin-right: .2em;
+}
+
+.nav-playlist ul li{
+    margin-bottom: 1em;
+}
+
+.download img{
+    width: 7%;
+    vertical-align: middle;
+}
+
+.profile img{
+    width: 7%;
+    vertical-align: middle;
+    background-color: grey;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.lower-nav-container{
+    justify-content: space-between;
 }
 
 /* MAIN */
@@ -100,6 +178,7 @@ main{
     width: calc(100% - var(--sidebar-width));
     margin-left: var(--sidebar-width);
     margin-top: var(--header-height);
+    padding-bottom: var(--footer-height)
 }
 
 /* FOOTER */
