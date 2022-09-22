@@ -57,7 +57,19 @@ html{
     color: white;
 }
 
+.round{
+    border-radius: 50%;
+}
+
 /* UTILITY */
+.mt-05{
+    margin-top: .5em;
+}
+
+.mb-05{
+    margin-bottom: .5em;
+}
+
 .mt-1{
     margin-top: 1em;
 }
@@ -104,6 +116,10 @@ html{
 
 .mr-3{
     margin-right: 3em;
+}
+
+.tac{
+    text-align: center;
 }
 
 /* HEADER */
@@ -201,7 +217,7 @@ nav{
 
 /* MAIN */
 main{
-    background-color: lightblue;
+    background-color: var(--main-bg);
     overflow: auto;
     overflow-x:hidden;
     width: calc(100% - var(--sidebar-width));
@@ -228,7 +244,7 @@ main{
 
 .genres-container ul li{
     display: inline-block;
-    margin-right: .6em;
+    margin-right: 1em;
     margin-top: .6em;
 }
 
@@ -242,22 +258,29 @@ main{
     width: 95%;
     margin: 0 auto;
 }
+
+.album-container h3{
+    font-size: 1rem;
+}
 /* Recently played section */
 .cards-container{
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
-    
+    /* justify-content: space-between; */
 }
 
+/* Creates for me */
+
+
+/* Card */
 .card{
-    width: calc((100vw - var(--sidebar-width)) / 6 - 1.5em);
-    height: calc((100vw - var(--sidebar-width)) / 6 - 1.5em);
-    background-color: red;
-    
+    /* width: calc((100vw - var(--sidebar-width)) / 6 - 1.5em); */
+    /* height: calc((100vw - var(--sidebar-width)) / 6 - 1.5em); */
+    width: calc(100% / 6 - 1em);
+    margin-right: 1em;
+
 }
 
 
@@ -276,12 +299,31 @@ footer{
 
 /* Small Desktop */
 @media screen and (max-width: 1100px) {
+    /* Card */
+    .card{
+    width: calc(100% / 4 - 1em);
+    margin-right: 1em;
+    }
+
+    .subtitle{
+        margin-bottom: 1em;
+    }
+
+
 
 }
 
 /* Tablet */
 @media screen and (max-width: 700px) {
-    
+    /* Card */
+    .card{
+        width: calc(100% / 2 - 1em);
+        margin-right: 1em;
+        }
+
+    .subtitle{
+        margin-bottom: 1em;
+    }
 }
 
 /* Mobile */
