@@ -288,8 +288,6 @@ main{
 
 .figure{
     position: relative;
-    background-color: black;
-    z-index: 2;
 }
 
 
@@ -404,8 +402,6 @@ footer{
     margin-right: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    z-index: 9;
 }
 
 .play-hover i{
