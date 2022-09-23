@@ -271,15 +271,13 @@ main{
     /* justify-content: space-between; */
 }
 
-/* Creates for me */
-
-
 /* Card */
 .card{
     /* width: calc((100vw - var(--sidebar-width)) / 6 - 1.5em); */
     /* height: calc((100vw - var(--sidebar-width)) / 6 - 1.5em); */
     width: calc(100% / 6 - 1em);
     margin-right: 1em;
+    position: relative;
 
 }
 
@@ -389,6 +387,15 @@ footer{
     padding: 0 .5em;
 }
 
+/* HOVER */
+/* Card */
+.play-hover{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
 
 /* MEDIA QUERIES */
 
