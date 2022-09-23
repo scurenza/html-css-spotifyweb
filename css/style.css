@@ -278,8 +278,7 @@ main{
 /* Card */
 .card{
     width: calc(100% / 6 - 1em);
-    margin-right: 1em;
-    z-index: 1;
+    margin-right: 1em;    
 }
 
 .card img{
@@ -300,12 +299,14 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
+    
 }
 
 .footer-container{
     display: flex;
     justify-content: space-between;
     height: 100%;
+    z-index: 10;
 }
 
 /* Player */
@@ -402,6 +403,12 @@ footer{
     margin-right: 0;
     height: 100%;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.426);
+    display: none;
+
 }
 
 .play-hover i{
@@ -410,6 +417,15 @@ footer{
     left: 50%;
     transform: translate(-50% , -50%);
     font-size: 3em;
+}
+
+.card:hover .play-hover{
+    display: inline-block;
+}
+
+/* btn */
+.btn:hover{
+    transform: scale(1.03);
 }
 
 
