@@ -36,6 +36,10 @@ hr{
     --header-height: 100px;
     --sidebar-width: 280px;
     --footer-height: 100px;
+
+    /* cards */
+    --card-height: calc(100% / 6 - 1em);
+    --card-width: calc(100% / 6 - 1em);
 }
 
 /* COMMON */
@@ -273,16 +277,19 @@ main{
 
 /* Card */
 .card{
-    /* width: calc((100vw - var(--sidebar-width)) / 6 - 1.5em); */
-    /* height: calc((100vw - var(--sidebar-width)) / 6 - 1.5em); */
     width: calc(100% / 6 - 1em);
     margin-right: 1em;
-
-
+    z-index: 1;
 }
 
-figure{
+.card img{
+    display: block;
+}
+
+.figure{
     position: relative;
+    background-color: black;
+    z-index: 2;
 }
 
 
@@ -394,15 +401,19 @@ footer{
 /* HOVER */
 /* Card */
 .play-hover{
+    margin-right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 9;
+}
+
+.play-hover i{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
     font-size: 3em;
-    margin-right: 0;
-}
-.play-hover i{
-
 }
 
 
